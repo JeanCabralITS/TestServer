@@ -11,7 +11,12 @@ extension Droplet {
         get("plaintext") { req in
             return "Hello, world!"
         }
-
+        get("DJ"){ req in
+            return "Hey You Created a New Route"
+        }
+        get("test"){req in
+            return "This is a Test Route "
+        }
         // response to requests to /info domain
         // with a description of the request
         get("info") { req in
